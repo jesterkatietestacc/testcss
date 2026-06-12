@@ -484,6 +484,10 @@ img[src$="icon_den_friend.png"] {
 content: url('imagelink') !important;
 width: 24px !important; }
 
+img[src$="donator.png"] {
+content: url('imagelink') !important;
+width: 24px !important; }
+
 /* LION AND USER AVATAR OPACITY */
    
 div#lion_image {
@@ -723,11 +727,7 @@ do not give the box container a background.
 Box1, Box2, & Box3 can be repeated as many times as possible, just make sure you properly close them.
 box html should look like this
 <div class="boxcontainer"><div class="Box1">text</div></div>
-<div class="boxcontainer"><div class="Box3">text</div><div class="Box2">text</div></div>
-
-for box toppers, they're essentially just invisible boxes. you can use the tag 'margin-top' or 'margin-bottom'
-to change how they sit on top of your boxes. you can even put negative values in these fields, to make it go down more.
-do <div class="topper"><img src="IMGLINK"></div> for these- they do not typically need containers */
+<div class="boxcontainer"><div class="Box3">text</div><div class="Box2">text</div></div> */
 
 .boxcontainer {
 background: none;
@@ -789,15 +789,6 @@ transition: 1s }
 .Box3:hover {
 overflow-y: auto;
 height: 250px; }
-
-.topper {
-background: none;
-float: left;
-height: auto;
-width: auto;
-overflow: hidden;
-margin-top: 0px;
-margin-bottom: 0px; }
 
 /* MOBILE ONLY BOXES 
 - these will only display on mobile. use if you want a more simplified box for mobile.
