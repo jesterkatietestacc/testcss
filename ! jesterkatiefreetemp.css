@@ -290,9 +290,27 @@ background: #HEX !important; }
 div#chatMessageContainer {
 border: none !important; }
 
+/* PINNED MESSAGES - This will change the background color of where staff pin news */
+
+.s-chat-message__pinned {
+background-color: #HEX !important;
+color: #HEX !important;
+border: none !important; }
+
+/* Odd will show at the TOP of chat, even will show every other message under it. If you want both colors the same, just copy and
+paste the code for each option*/ 
+
+.s-chat-message:nth-child(even) {
+background: #HEX !important;
+border: none !important; }
+.s-chat-message:nth-child(odd) {
+background: #HEX !important;
+border: none !important; }
+
 .s-chat-message_timestamp {
 color: #HEX !important; }
 
+/* Channel Selector */ 
 .s-chat-sidebar #fraChatChannelMenu,
 button.channelSwitcher, button.channelSwitcher.active {
     background: #HEX !important;
@@ -300,6 +318,10 @@ color: #HEX !important;
 border: none !important;
 border-radius: 0px !important;
 box-shadow: none !important; }
+
+/* Emote List
+Keep border-top on div.emoteList.active::before as none, otherwise you'll
+have a super weird gap between the emotelist and the little triangle*/
 
 div.emoteList.active {
   background: #HEX !important;
@@ -311,27 +333,7 @@ background: #HEX
 border-top: none !important;
 border: 1px solid #HEX !important; }
 
-/* PINNED MESSAGES - This will change the background color of where staff pin news */
 
-.s-chat-message__pinned {
-background-color: #HEX !important;
-color: #HEX !important;
-border: none !important; }
-
-/* Odd will show at the TOP of chat, even will show every other message under it. If you want both colors the same, do
-not touch the even/odd specifications */ 
-
-.s-chat-message {
-background: #HEX !important;
-color: #HEX !important;
-border-bottom: #HEX !important; }
-
-.s-chat-message:nth-child(even) {
-background: #HEX !important;
-border: none !important; }
-.s-chat-message:nth-child(odd) {
-background: #HEX !important;
-border: none !important; }
 
 /* This changes the color of pinged messages. Yes, it has to say background-color
 no it doesn't work if you just do background.
